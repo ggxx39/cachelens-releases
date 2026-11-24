@@ -1,21 +1,14 @@
 # CacheLens Releases
 
-Public binary distribution for CacheLens.
+Public Apple-notarized macOS DMG releases for **CacheLens** (`CacheLens.dmg` + `CacheLens.dmg.sha256`).
 
-This repository publishes notarized macOS downloads only.
+- **Open-Source Repository (GPL-3.0):** [`ggxx39/cachelens`](https://github.com/ggxx39/cachelens)
+- **Website & Download Redirect:** [`https://getcachelens.pages.dev/`](https://getcachelens.pages.dev/)
+- **Latest Notarized DMG:** `https://github.com/ggxx39/cachelens-releases/releases/latest/download/CacheLens.dmg`
+- **Matching SHA-256 Checksum:** `https://github.com/ggxx39/cachelens-releases/releases/latest/download/CacheLens.dmg.sha256`
 
-- Source code: private [`ggxx39/cachelens`](https://github.com/ggxx39/cachelens)
-- Stable download after the first notarized release:
-  `https://github.com/ggxx39/cachelens-releases/releases/latest/download/CacheLens.dmg`
-- Matching checksum:
-  `https://github.com/ggxx39/cachelens-releases/releases/latest/download/CacheLens.dmg.sha256`
+## Homebrew Cask
 
-## Rules
-
-- Ship only release notes, DMG assets, and SHA-256 checksums.
-- Never commit source archives, signing certificates, notarization credentials, or secrets.
-- Do not enable the official-site download button until a stapled, notarized DMG exists here.
-
-## Status
-
-No public download yet. Developer ID signing and Apple notarization are still required.
+```bash
+brew tap ggxx39/cachelens && brew install --cask cachelens
+```
